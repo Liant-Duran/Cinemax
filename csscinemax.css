@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: red;
+}
+
+header {
+    max-width: 1350px;
+    min-height: 110px;
+    background: rgb(43, 43, 43);
+    margin: 0 auto;
+}
+
+header #logo {
+    margin: 6px;
+    position: absolute;
+}
+
+#menu {
+    max-width: 1350px;
+    min-height: 50px;
+    background: rgb(43, 43, 43);
+    margin: 0 auto;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu a {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#menu a:hover {
+    background: rgb(56, 56, 87);
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+}
+
+#menu ul li:hover ul {
+    display: block;
+}
+
+#slider {
+    max-width: 1350px;
+    min-height: 100px;
+    background: darkgray;
+    margin: 0 auto;
+}
+
+#slider ul {
+    display: flex;
+    animation: cambio 10s infinite alternate linear;
+    width: 400px;
+}
+
+#slider li {
+    width: 100%;
+    list-style: none;
+}
+
+#slider img {
+    width: 1000%;
+    height: 50%;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+#contenedor {
+    max-width: 1350px;
+    min-height: 700px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+#contenedor h1 {
+    font-size: 25px;
+    font-family: Arial;
+    padding: 30px;
+}
+
+#cuadro1 {
+    background: #afafaf;
+    border: 1px solid black;
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 30px;
+    box-shadow: 0 2px 6px;
+}
+
+#cuadro2 {
+    background: #afafaf;
+    border: 1px solid black;
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 470px;
+    margin-top: -418px;
+    box-shadow: 0 2px 6px;
+}
+
+#cuadro3 {
+    background: #afafaf;
+    border: 1px solid black;
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 930px;
+    margin-top: -418px;
+    box-shadow: 0 2px 6px;
+}
+
+footer {
+    max-width: 1350px;
+    background: #000;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 18px;
+}

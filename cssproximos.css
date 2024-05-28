@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    max-width: 1350px;
+    min-height: 110px;
+    background: rgb(43, 43, 43);
+    margin: 0 auto;
+}
+
+header #logo {
+    margin: 6px;
+    position: absolute;
+}
+
+#menu {
+    max-width: 1350px;
+    min-height: 50px;
+    background: rgb(43, 43, 43);
+    margin: 0 auto;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu a {
+    color: #fff;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#menu a:hover {
+    background: rgb(56, 56, 87);
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+}
+
+#menu ul li:hover ul {
+    display: block;
+}
+
+#slider {
+    max-width: 1350px;
+    min-height: 100px;
+    background: darkgray;
+    margin: 0 auto;
+}
+
+#slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400px;
+}
+
+#slider li {
+    width: 100%;
+    list-style: none;
+}
+
+#slider img {
+    width: 1000%;
+    height: 50%;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor h1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.pelicula {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.detalles {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer {
+    max-width: 1350px;
+    min-height: 130px;
+    background: #000;
+    margin: 0 auto;
+}
